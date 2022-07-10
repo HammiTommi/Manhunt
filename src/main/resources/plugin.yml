@@ -1,0 +1,20 @@
+name: Manhunt
+version: 1.0
+author: GW_Adri
+main: de.gamingwave.manhunt.main.Main
+load: STARTUP
+
+commands:
+  timer:
+    permission: manhunt.timer
+    aliases: t
+  reset:
+    permission: manhunt.reset
+  hunter:
+    permission: manhunt.setHunter
+  runner:
+    permission: manhunt.setRunner
+  start:
+    permission: manhunt.start
+  pause:
+    permission: manhunt.pause
