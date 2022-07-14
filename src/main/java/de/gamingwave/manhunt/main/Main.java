@@ -21,6 +21,9 @@ public class Main extends JavaPlugin {
 
 
 
+
+
+
     private static Main main;
 
 
@@ -89,12 +92,20 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         main = this;
 
+
         Bukkit.getPluginCommand("timer").setExecutor(new TimerCommand());
         Bukkit.getPluginCommand("reset").setExecutor(new ResetCommand());
         Bukkit.getPluginCommand("hunter").setExecutor(new PermissionCommandHunter());
         Bukkit.getPluginCommand("runner").setExecutor(new PermissionCommandRunner());
         Bukkit.getPluginCommand("start").setExecutor(new Start());
         Bukkit.getPluginCommand("pause").setExecutor(new Pause());
+        Bukkit.getPluginCommand("heal").setExecutor(new Heal());
+        Bukkit.getPluginCommand("fly").setExecutor(new Fly());
+
+
+
+
+
 
         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "gamerule sendCommandFeedback false");
 
@@ -126,6 +137,9 @@ public class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents( new RunnerDeath(), this );
         Bukkit.getPluginManager().registerEvents(new NoDamage(), this);
         Bukkit.getPluginManager().registerEvents(new NoBlocks(), this);
+
+
+
 
 
     }

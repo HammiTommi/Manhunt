@@ -21,7 +21,7 @@ public class Pause implements CommandExecutor {
         if (!timer.isRunning()) {
             sender.sendMessage(Main.prefix + ChatColor.RED + "Der Timer läuft nicht.");
 
-            ;
+
         }
 
         timer.setRunning(false);

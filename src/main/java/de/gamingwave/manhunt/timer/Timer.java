@@ -181,6 +181,7 @@ public class Timer {
 
                     setHours(getHours() + 1);
                 }
+                return;
             }
         }.runTaskTimer(Main.getInstance(), 20, 20);
     }

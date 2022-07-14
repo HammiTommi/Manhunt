@@ -1,5 +1,5 @@
 name: Manhunt
-version: 1.0
+version: 1.1
 author: GW_Adri
 main: de.gamingwave.manhunt.main.Main
 load: STARTUP
@@ -18,3 +18,7 @@ commands:
     permission: manhunt.start
   pause:
     permission: manhunt.pause
+  heal:
+    description: Heals the Player
+  fly:
+    description: Set you to Fly
